@@ -164,11 +164,11 @@ total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
 print("Tagihan kepada:") </br>
 print(tagihan_ke)</br>
 print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br>
+print(total_harga)</br></br>
 </summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
 Mr. Yoyo</br>
 Selamat pagi, anda harus membayar tagihan sebesar:</br>
-85000000</i></br>
+85000000</i></br></br>
 <tr><td colspan="4">Tagihan untuk Mr. Yoyo</td></tr>
 
 <tr><td>Nama Jasa</td><td>Harga per hari</td><td>Total hari</td><td>Subtotal</td></tr>
@@ -176,23 +176,174 @@ Selamat pagi, anda harus membayar tagihan sebesar:</br>
 <tr><td>Data Cleansing</td><td>1500000</td><td>10</td><td>15000000</td></tr>
 <tr><td>Data Integration</td><td>2000000</td><td>15</td><td>30000000</td></tr>
 <tr><td>Data Transformation</td><td>2500000</td><td>10</td><td>25000000</td></tr>
-<tr><td colspan="3">Total</td><td>85000000
+<tr><td colspan="3">Total</td><td>85000000</td></tr>
 </table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<details align="justify"> <summary><b>Tugas Praktek</b></br><i>jam = 17</br>
+tagihan_ke = 'Mr. Yoyo'</br>
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
+integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
+transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari'] </br>
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari'] </br>
+sub_integration = integration['harga_harian']*integration['total_hari'] </br>
+sub_transform = transform['harga_harian']*transform['total_hari']</br>
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
+print("Tagihan kepada:")</br>
+print(tagihan_ke)</br>
+if jam>19:</br>
+    print("Selamat malam, anda harus membayar tagihan sebesar:")</br>
+elif jam>17:</br>
+    print("Selamat sore, anda harus membayar tagihan sebesar:") </br>
+elif jam > 12:</br>
+    print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
+else:</br>
+    print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
+print(total_harga)</br></br>
+</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
+Mr. Yoyo</br>
+Selamat siang, anda harus membayar tagihan sebesar:</br>
+85000000 </i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<details align="justify"> <summary><b>Tugas Praktek</b></br>
+  “Aksara, kantor kita akan merilis penawaran baru terkait jasa pembuatan data warehouse. Bisa tolong kembangkan kalkulatormu untuk menghitung tagihan pembayaran? Soalnya selama ini kita masih manual,” jelas Senja sembari memberikan contoh nota tagihan kantor. Aku belum mengiyakan karena sedikit ragu. Mengingat sebelumnya aku sempat salah. Tapi dalam hati aku berkata, pasti bisa! Kali ini aku harus mampu membuat kalkulator lebih rumit.</br>Solusi yang terlintas dalam bayanganku: Kalkulator ini harus dapat menghitung subtotal setiap jasa yang diambil dari kolom harga/ hari dan total hari dari setiap jasa. Ternyata Senja juga memikirkan hal yang sama dengan instruksinya yang sangat membantu.</br></br>tagihan_ke = 'Mr. Yoyo'</br>
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
+integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
+transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']</br>
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']</br>
+sub_integration = integration['harga_harian']*integration['total_hari']</br>
+sub_transform = transform['harga_harian']*transform['total_hari']</br>
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
+print("Tagihan kepada:") </br>
+print(tagihan_ke)</br>
+print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
+print(total_harga)</br></br>
+</summary><table align="justify"><i>Output : </br>
+Tagihan kepada:</br>
+Mr. Yoyo</br>
+Selamat pagi, anda harus membayar tagihan sebesar:</br>
+85000000</i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<p align="justify">Aku menunjukkan potongan kode dan hasil dari kalkulator yang telah aku buat ke Senja yang sudah berhasil menampilkan kalimat:</br><b>Selamat pagi, Anda harus membayar tagihan sebesar: </b>/br>
+Kulihat kedua alis Senja bertaut, ini pertanda kodeku pasti ada yang keliru./br>
+“Kalau kamu hanya memasukkan perintah ‘selamat pagi’ seakan kalau tagihan ini dikirim hanya saat pagi, padahal bisa kapan saja sesuai kebutuhan,” komentar Senja. Begini, jam pengiriman email kantor kita mulai dari 6 pagi sampai 9 malam./br>
+  Tolong masukkan variabel keterangan waktu tersebut di kodemu. Lalu, diatur dengan detail berikut:
+<ol><li>Diatas jam 07 malam adalah salam 'selamat malam'</li>
+<li>Diatas jam 05 sore adalah salam 'selamat sore'</li>
+<li>Diatas jam 12 siang, adalah 'selamat siang'</li>
+<li>dan selain itu 'selamat pagi'</li></ol>
+<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br><i>
+  jam = 17</br>
+tagihan_ke = 'Mr. Yoyo'</br>
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
+integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
+transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari'] </br>
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari'] </br>
+sub_integration = integration['harga_harian']*integration['total_hari'] </br>
+sub_transform = transform['harga_harian']*transform['total_hari']</br>
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
+print("Tagihan kepada:")</br>
+print(tagihan_ke)</br>
+if jam>19:</br>
+    print("Selamat malam, anda harus membayar tagihan sebesar:")</br>
+elif jam>17:</br>
+    print("Selamat sore, anda harus membayar tagihan sebesar:") </br>
+elif jam > 12:</br>
+    print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
+else:</br>
+    print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
+print(total_harga)</br></br>
+</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
+Mr. Yoyo</br>
+Selamat siang, anda harus membayar tagihan sebesar:</br>
+85000000</i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<details align="justify"> <summary><b>Python while loops – Part 1</b></br> </br>#Tagihan
+tagihan = [50000, 75000, 125000, 300000, 200000]</br>
+# Tanpa menggunakan while loop</br>
+total_tagihan = tagihan[0]+tagihan[1]+tagihan[2]+tagihan[3]+tagihan[4]</br>
+print(total_tagihan)</br>
+# Dengan menggunakan while loop</br>
+i = 0 # sebuah variabel untuk mengakses setiap elemen tagihan satu per satu</br>
+jumlah_tagihan = len(tagihan) # panjang (jumlah elemen dalam) list tagihan</br>
+total_tagihan = 0 # mula-mula, set total_tagihan ke 0</br>
+while i < jumlah_tagihan : # selama nilai i kurang dari jumlah_tagihan</br>
+    total_tagihan += tagihan[i] # tambahkan tagihan[i] ke total_tagihan</br>
+    i += 1 # tambahkan nilai i dengan 1 untuk memproses tagihan selanjutnya.</br>
+print(total_tagihan)</br></br>
+</summary><table align="justify"><i>Output : </br>750000</br>
+750000</i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<details align="justify"> <summary><b>Python while loops – Part 2</b></br>tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+i = 0</br>
+jumlah_tagihan = len(tagihan)</br>
+total_tagihan = 0</br>
+while i < jumlah_tagihan:</br>
+    #jika terdapat tagihan ke-i yang bernilai minus (di bawah nol),</br>
+    #pengulangan akan dihentikan</br>
+    if tagihan[i] < 0:</br>
+        total_tagihan = -1</br>
+        print("terdapat angka minus dalam tagihan, perhitungan dihentikan!")</br>
+        break</br>
+    total_tagihan += tagihan[i]</br>
+    i += 1</br>
+print(total_tagihan)</br></br>
+</summary><table align="justify"><i>Output : </br>terdapat angka minus dalam tagihan, perhitungan dihentikan!</br>
+-1</i></table></details>
+
+<details align="justify"> <summary><b>Python while loops – Part 3</b></br>tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+i = 0</br>
+jumlah_tagihan = len(tagihan)</br>
+total_tagihan = 0</br>
+while i < jumlah_tagihan:</br>
+    # jika terdapat tagihan ke-i yang bernilai minus (di bawah nol),</br>
+    # abaikan tagihan ke-i dan lanjutkan ke tagihan berikutnya</br>
+    if tagihan[i] < 0:</br>
+        i += 1</br>
+        continue</br>
+    total_tagihan += tagihan[i]</br>
+    i += 1</br>
+print(total_tagihan)</br>
+</summary><table align="justify"><i>Output : </br>
+750000</i></table></details>
+
+<details align="justify"> <summary><b>Python for loops – Part 1</b></br>list_tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+total_tagihan = 0</br>
+for tagihan in list_tagihan: # untuk setiap tagihan dalam list_tagihan</br>
+    total_tagihan += tagihan# tambahkan tagihan ke total_tagihan</br>
+print(total_tagihan)</br></br>
+</summary><table align="justify"><i>Output : </br>550000</i></table></details>
+
+<details align="justify"> <summary><b>Python for loops – Part 2</b></br>list_tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+total_tagihan = 0</br>
+for tagihan in list_tagihan:</br>
+    if tagihan < 0:</br>
+        print("terdapat angka minus dalam tagihan, perhitungan dihentikan!")</br>
+        break</br>
+    total_tagihan += tagihan</br>
+print(total_tagihan)</br></br>
+</summary><table align="justify"><i>Output : </br>terdapat angka minus dalam tagihan, perhitungan dihentikan!</br>
+125000</i></table></details>
+
+<details align="justify"> <summary><b>Python for loops – Part 3</b></br>Ternyata, aku belajar bahwa ada istilah nested loops, yaitu pengulangan bersarang. Dengan nested loops, aku dapat mengkombinasikan (menambahkan) struktur pengulangan lain di dalamnya.  Aku mencoba potongan kode di bawah menggunakan live code editor:</br></br>list_daerah = ['Malang', 'Palembang', 'Medan']</br>
+list_buah = ['Apel', 'Duku', 'Jeruk']</br>
+for nama_daerah in list_daerah :</br>
+    for nama_buah in list_buah:</br>
+        print(nama_buah+" "+nama_daerah)</br></br>
+</summary><table align="justify"><i>Output : </br>Apel Malang</br>
+Duku Malang</br>
+Jeruk Malang</br>
+Apel Palembang</br>
+Duku Palembang</br>
+Jeruk Palembang</br>
+Apel Medan</br>
+Duku Medan</br>
+Jeruk Medan</i></table></details>
 
 <details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
 </summary><table align="justify"><i>Output : </br></i></table></details>
