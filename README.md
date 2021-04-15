@@ -14,10 +14,10 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 <details align="justify"> <summary>print("Hello World!")
 </summary><table align="justify"><i>Output : </br>Hello World!</i></table></details>
-<p align="justify">
-Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</p>
 
-<details align="justify"> <summary>print("Halo Dunia")</br>
+
+
+<details align="justify"> <summary>Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</br>print("Halo Dunia")</br>
 print("Riset Bahasa Python")</br>
 </summary><table align="justify"><i>Output : </br>Halo Dunia</br>
 Riset Bahasa Python</i></table></details>
