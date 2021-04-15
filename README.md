@@ -17,7 +17,7 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 
 
-<details align="justify"> <summary>Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</br>print("Halo Dunia")</br>
+<details align="justify"> <summary>Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</br></br>print("Halo Dunia")</br>
 print("Riset Bahasa Python")</br>
 </summary><table align="justify"><i>Output : </br>Halo Dunia</br>
 Riset Bahasa Python</i></table></details>
@@ -32,7 +32,7 @@ bilangan2 = 10</br>
 kalimat1 = "Belajar Bahasa Python"</br>
 #Operators</br>
 print(bilangan1 + bilangan2)</br>
-</summary><table align="justify"><i>Output : </br>Belajar Python menyenangkan</br>
+</summary><table align="justify"><i></br>Output : </br>Belajar Python menyenangkan</br>
 Halo Dunia</br>
 Hello World!</br>
 15</i></table></details>
