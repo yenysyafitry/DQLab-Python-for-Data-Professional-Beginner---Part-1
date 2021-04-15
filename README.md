@@ -31,7 +31,7 @@ bilangan1 = 5</br>
 bilangan2 = 10</br>
 kalimat1 = "Belajar Bahasa Python"</br>
 #Operators</br>
-print(bilangan1 + bilangan2)</br></br>
+print(bilangan1 + bilangan2)</br>
 </summary><table align="justify"><i>Output : </br>Belajar Python menyenangkan</br>
 Halo Dunia</br>
 Hello World!</br>
