@@ -108,15 +108,15 @@ daftar_belanja = [sepatu,baju,celana]
 sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>
 baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>
 celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000}</br>
-# Hitunglah harga masing-masing data setelah dikurangi diskon</br>
+#Hitunglah harga masing-masing data setelah dikurangi diskon</br>
 harga_sepatu = sepatu["harga"] - sepatu["diskon"] </br>
 harga_baju = baju["harga"] - baju["diskon"]</br>
 harga_celana = celana["harga"] - celana["diskon"]</br>
-# Hitung harga total</br>
+#Hitung harga total</br>
 total_harga = harga_sepatu + harga_baju + harga_celana</br>
-# Hitung harga kena pajak</br>
+#Hitung harga kena pajak</br>
 total_pajak = total_harga * 0.1</br>
-# Cetak total_harga + total_pajak</br>
+#Cetak total_harga + total_pajak</br>
 print(total_harga + total_pajak)</br>
 </summary><table align="justify"><i>Output : </br>365200.0</i></table></details>
 
