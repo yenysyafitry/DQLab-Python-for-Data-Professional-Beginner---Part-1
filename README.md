@@ -227,9 +227,9 @@ Mr. Yoyo</br>
 Selamat pagi, anda harus membayar tagihan sebesar:</br>
 85000000</i></table></details>
 
-<p align="justify">Aku menunjukkan potongan kode dan hasil dari kalkulator yang telah aku buat ke Senja yang sudah berhasil menampilkan kalimat:</br><b>Selamat pagi, Anda harus membayar tagihan sebesar: </b>/br>
-Kulihat kedua alis Senja bertaut, ini pertanda kodeku pasti ada yang keliru./br>
-“Kalau kamu hanya memasukkan perintah ‘selamat pagi’ seakan kalau tagihan ini dikirim hanya saat pagi, padahal bisa kapan saja sesuai kebutuhan,” komentar Senja. Begini, jam pengiriman email kantor kita mulai dari 6 pagi sampai 9 malam./br>
+<p align="justify">Aku menunjukkan potongan kode dan hasil dari kalkulator yang telah aku buat ke Senja yang sudah berhasil menampilkan kalimat:</br><b>Selamat pagi, Anda harus membayar tagihan sebesar: </b></br>
+Kulihat kedua alis Senja bertaut, ini pertanda kodeku pasti ada yang keliru.</br>
+“Kalau kamu hanya memasukkan perintah ‘selamat pagi’ seakan kalau tagihan ini dikirim hanya saat pagi, padahal bisa kapan saja sesuai kebutuhan,” komentar Senja. Begini, jam pengiriman email kantor kita mulai dari 6 pagi sampai 9 malam.</br>
   Tolong masukkan variabel keterangan waktu tersebut di kodemu. Lalu, diatur dengan detail berikut:
 <ol><li>Diatas jam 07 malam adalah salam 'selamat malam'</li>
 <li>Diatas jam 05 sore adalah salam 'selamat sore'</li>
@@ -257,7 +257,7 @@ elif jam > 12:</br>
     print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
 else:</br>
     print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br>
+print(total_harga)</br></br></i>
 </summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
 Mr. Yoyo</br>
 Selamat siang, anda harus membayar tagihan sebesar:</br>
