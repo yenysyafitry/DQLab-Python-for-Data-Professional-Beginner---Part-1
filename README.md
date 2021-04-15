@@ -104,7 +104,7 @@ celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000} </br>
 daftar_belanja = [sepatu,baju,celana]
 <p>
 
-<details align="justify"> <summary><b>Tugas Praktek</b>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</br></br># Data yang dinyatakan ke dalam dictionary</br>
+<details align="justify"> <summary><b>Tugas Praktek</b>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</br># Data yang dinyatakan ke dalam dictionary</br>
 sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>
 baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>
 celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000}</br>
@@ -147,9 +147,8 @@ harga_baju = baju["harga"] - baju["diskon"]</br>
 harga_celana = celana["harga"] - celana["diskon"]</br>
 total_harga = (harga_sepatu + harga_baju + harga_celana) * 1.1</br>
 print(total_harga)</br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
 </summary><table align="justify"><i>Output : </br>365200.00000000006</i></table></details>
+
 
 <details align="justify"> <summary><b>Tugas Praktek</b></br></br>tagihan_ke = 'Mr. Yoyo'</br>
 warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
