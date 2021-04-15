@@ -42,7 +42,7 @@ bilangan2 = 10</br>
 print(bilangan1 - bilangan2)</i></br></br>
 </summary><table align="justify"><i>Output : </br>10</i></table></details>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>Tugas:</br>
+<details align="justify"> <summary><b>Tugas Praktek</b></br>
 Aku diminta menghitung harga_setelah_potongan dan harga_final dengan mengalikan harga_setelah_potongan dengan angka 1.1 karena jumlah PPN sebesar 10% (100% + 10% = 110% atau 1.1)</br>
 Aku menggunakan variabel harga_asli dengan nilai 20000 dan variabel potongan dengan nilai 2000.</br></br>harga_asli = 20000</br>
 potongan = 2000</br>
@@ -150,7 +150,7 @@ print(total_harga)</br>
 </summary><table align="justify"><i>Output : </br>365200.00000000006</i></table></details>
 
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br></br>tagihan_ke = 'Mr. Yoyo'</br>
+<details align="justify"> <summary><b>Tugas Praktek</b></br>tagihan_ke = 'Mr. Yoyo'</br>
 warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
 cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
 integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
