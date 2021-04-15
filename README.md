@@ -59,7 +59,7 @@ print(contoh_list[0])</br>
 print(contoh_list[3])</br>
 contoh_list = [1, 'dua', 3, 4.0,5]</br>
 contoh_list[3] = 'empat'</br>
-print(contoh_list[3])</br>
+print(contoh_list[3])</br></br>
 </summary><table align="justify"><i>Output : </br>1</br>
 4.0</br>
 empat</i></table></details>
@@ -77,14 +77,14 @@ print(contoh_list)</br>
 contoh_set = {'Dewi', 'Budi', 'Cici', 'Linda', 'Cici'}</br>
 print(contoh_set)</br>
 contoh_frozen_set = ({'Dewi', 'Budi', 'Cici', 'Linda', 'Cici'})</br>
-print(contoh_frozen_set)</i> </br>
+print(contoh_frozen_set)</i> </br></br>
 </summary><table align="justify"><i>Output : </br> ['Dewi', 'Budi', 'Cici', 'Linda', 'Cici'] </br>
 {'Dewi', 'Cici', 'Linda', 'Budi'} </br>
 {'Dewi', 'Cici', 'Linda', 'Budi'}</i></table></details>
 
 <details align="justify"> <summary><b>Mapping Type</b></br>Tipe data mapping dapat digunakan untuk memetakan sebuah nilai ke nilai lainnya. Dalam Python, tipe data mapping disebut dengan istilah dictionary. Tipe data dictionary dapat dideklarasikan dengan diawali oleh tanda kurung buka kurawal ( { ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( } ). Setiap elemen pada tipe data dictionary dideklarasikan dengan format:</br></br>person = {'nama': 'John Doe', 'pekerjaan': 'Programmer'}</br>
 print(person['nama'])</br>
-print(person['pekerjaan'])</br>
+print(person['pekerjaan'])</br></br>
 </summary><table align="justify"><i>Output : </br>John Doe</br>
 Programmer </i></table></details>
 
@@ -139,13 +139,45 @@ print("Penyederhanaan kode - harga_bayar=", harga_bayar)</br>
 </summary><table align="justify"><i>Output : </br></br>Kode awal - harga_bayar= 115500.0</br>
 Penyederhanaan kode - harga_bayar= 115500.0</i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
+<details align="justify"> <summary><b>Tugas Praktek</b></br>Aku baru sadar kalau ternyata dengan struktur penulisan yang tepat, penulisan syntax dapat dipersingkat untuk menjadi lebih simpel. Kenapa tidak terpikirkan olehku ya? Harusnya aku tidak perlu mendeklarasikan variabel total_pajak dan aku bisa langsung menampung hasil perhitungan akhir saat mendeklarasikan variabel total_harga. Jadi, kodeku akan berjalan jika aku menambahkan setiap harga barang yang telah dipotong diskon sebelum menghitung pajak.</br></br>sepatu = { "nama" : "Sepatu Niko", "harga": 150000, "diskon": 30000 }</br>
+baju = { "nama" : "Baju Unikloh", "harga": 80000, "diskon": 8000 }</br>
+celana = { "nama" : "Celana Lepis", "harga": 200000, "diskon": 60000 }</br>
+harga_sepatu = sepatu["harga"] - sepatu["diskon"]</br>
+harga_baju = baju["harga"] - baju["diskon"]</br>
+harga_celana = celana["harga"] - celana["diskon"]</br>
+total_harga = (harga_sepatu + harga_baju + harga_celana) * 1.1</br>
+print(total_harga)</br>
 </summary><table align="justify"><i>Output : </br></i></table></details>
 <details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+</summary><table align="justify"><i>Output : </br>365200.00000000006</i></table></details>
 
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
-</summary><table align="justify"><i>Output : </br></i></table></details>
+<details align="justify"> <summary><b>Tugas Praktek</b></br></br>tagihan_ke = 'Mr. Yoyo'</br>
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
+integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
+transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']</br>
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']</br>
+sub_integration = integration['harga_harian']*integration['total_hari']</br>
+sub_transform = transform['harga_harian']*transform['total_hari']</br>
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
+print("Tagihan kepada:") </br>
+print(tagihan_ke)</br>
+print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
+print(total_harga)</br>
+</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
+Mr. Yoyo</br>
+Selamat pagi, anda harus membayar tagihan sebesar:</br>
+85000000</i></br>
+<tr><td colspan="4">Tagihan untuk Mr. Yoyo</td></tr>
+
+<tr><td>Nama Jasa</td><td>Harga per hari</td><td>Total hari</td><td>Subtotal</td></tr>
+<tr><td>Data Warehousing</td><td>1000000</td><td>15</td><td>15000000</td></tr>
+<tr><td>Data Cleansing</td><td>1500000</td><td>10</td><td>15000000</td></tr>
+<tr><td>Data Integration</td><td>2000000</td><td>15</td><td>30000000</td></tr>
+<tr><td>Data Transformation</td><td>2500000</td><td>10</td><td>25000000</td></tr>
+<tr><td colspan="3">Total</td><td>85000000
+</table></details>
 
 <details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br>
 </summary><table align="justify"><i>Output : </br></i></table></details>
