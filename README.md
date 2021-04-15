@@ -262,7 +262,7 @@ Mr. Yoyo</br>
 Selamat siang, anda harus membayar tagihan sebesar:</br>
 85000000</i></table></details>
 
-<details align="justify"> <summary><b>Python while loops – Part 1</b></br> </br>#Tagihan
+<details align="justify"> <summary><b>Python while loops – Part 1</b> </br>#Tagihan
 tagihan = [50000, 75000, 125000, 300000, 200000]</br>
 #Tanpa menggunakan while loop</br>
 total_tagihan = tagihan[0]+tagihan[1]+tagihan[2]+tagihan[3]+tagihan[4]</br>
