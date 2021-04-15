@@ -88,7 +88,7 @@ print(person['pekerjaan'])</br></br>
 </summary><table align="justify"><i>Output : </br>John Doe</br>
 Programmer </i></table></details>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }
+<details align="justify"> <summary><b>Tugas Praktek</b></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }
 baju = {"nama": "Baju Unikloh", "Harga": 80000, "diskon": 8000 }
 Celana = {"nama": "Celana Lepis", "Harga": 200000, "diskon": 60000 }</i></br>
 </summary><table align="justify"><i>Output : </br></i>
@@ -104,7 +104,7 @@ celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000} </br>
 daftar_belanja = [sepatu,baju,celana]
 <p>
 
-<details align="justify"> <summary><b>Tugas Praktek</b>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</br># Data yang dinyatakan ke dalam dictionary</br>
+<details align="justify"> <summary><b>Tugas Praktek</b></br>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</br># Data yang dinyatakan ke dalam dictionary</br>
 sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>
 baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>
 celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000}</br>
