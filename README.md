@@ -200,7 +200,7 @@ elif jam > 12:</br>
     print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
 else:</br>
     print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br>
+print(total_harga)</br></br></i>
 </summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
 Mr. Yoyo</br>
 Selamat siang, anda harus membayar tagihan sebesar:</br>
@@ -265,10 +265,10 @@ Selamat siang, anda harus membayar tagihan sebesar:</br>
 
 <details align="justify"> <summary><b>Python while loops – Part 1</b></br> </br>#Tagihan
 tagihan = [50000, 75000, 125000, 300000, 200000]</br>
-# Tanpa menggunakan while loop</br>
+#Tanpa menggunakan while loop</br>
 total_tagihan = tagihan[0]+tagihan[1]+tagihan[2]+tagihan[3]+tagihan[4]</br>
 print(total_tagihan)</br>
-# Dengan menggunakan while loop</br>
+#Dengan menggunakan while loop</br>
 i = 0 # sebuah variabel untuk mengakses setiap elemen tagihan satu per satu</br>
 jumlah_tagihan = len(tagihan) # panjang (jumlah elemen dalam) list tagihan</br>
 total_tagihan = 0 # mula-mula, set total_tagihan ke 0</br>
