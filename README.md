@@ -12,7 +12,7 @@ Sifat open-source dari Python mengartikan bahwa setiap orang dapat mengembangkan
 Fungsi Python yang akan pertama kali aku pelajari adalah fungsi print().
 Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
-<details align="justify"> <summary>print("Hello World!")</br>
+<details align="justify"> <summary>print("Hello World!")
 </summary><table align="justify"><i>Output : </br>Hello World!</i></table></details>
 <p align="justify">
 Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</p>
