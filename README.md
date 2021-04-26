@@ -168,7 +168,7 @@ celana = {"nama barang": "Celana Lepis", "harga": 200000, "diskon": 60000 }
 <tr><td>Nama Barang</td><td>Harga</td><td>Diskon</td></tr>
 <tr><td>Sepatu Niko</td><td>150000</td><td>30000</td></tr>
 <tr><td>Baju Unikloh</td><td>80000</td><td>8000</td></tr>
-<tr><td>Celana Lepis</td><td>200000</td><td>60000</td></tr>
+<tr><td>Celana Lepis</td><td>200000</td><td>60000</td></tr></table>
 
 ----
 
