@@ -164,7 +164,7 @@ baju = {"nama barang": "Baju Unikloh", "harga": 80000, "diskon": 8000 }
 celana = {"nama barang": "Celana Lepis", "harga": 200000, "diskon": 60000 }
 ```
 
-<table align="justify"><i>Output : </br></i>
+<table align="justify"> <tr><td colspan="3">Output : </td></tr>
 <tr><td>Nama Barang</td><td>Harga</td><td>Diskon</td></tr>
 <tr><td>Sepatu Niko</td><td>150000</td><td>30000</td></tr>
 <tr><td>Baju Unikloh</td><td>80000</td><td>8000</td></tr>
