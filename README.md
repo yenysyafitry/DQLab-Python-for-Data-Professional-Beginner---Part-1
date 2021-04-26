@@ -88,8 +88,8 @@ print(person['pekerjaan'])</br></br>
 </summary><table align="justify"><i>Output : </br>John Doe</br>
 Programmer </i></table></details>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }
-baju = {"nama": "Baju Unikloh", "Harga": 80000, "diskon": 8000 }
+<details align="justify"> <summary><b>Tugas Praktek</b></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }</br>
+baju = {"nama": "Baju Unikloh", "Harga": 80000, "diskon": 8000 }</br>
 Celana = {"nama": "Celana Lepis", "Harga": 200000, "diskon": 60000 }</i></br></br>
 </summary><table align="justify"><i>Output : </br></i>
 <tr><td>Nama Barang</td><td>Harga</td><td>Diskon</td></tr>
@@ -399,4 +399,6 @@ Konstruksi dari struktur bahasa pemrograman Python.</li>
 <li>Teknik mempraktekkan penggunaan jenis-jenis operator pada Python.</li>
 <li>Teknik mempraktekkan penggunaan pengkondisian untuk pengambilan keputusan dan perulangan pada Python.</li>
 <li>Program Python untuk penyelesaian kasus bisnis sederhana.</li></ol>
+
+<p align="center"><b>E-Sertifikat </b></br><img src="https://github.com/yenysyafitry/DQLab-Python-for-Data-Professional-Beginner/blob/main/e-sertifikat.jpg"></p>
 
