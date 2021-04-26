@@ -286,7 +286,7 @@ print(total_harga)
 ```
 
 <table align="justify">
-    <tr><td colspan="4">Tagihan kepada: Mr. Yoyo</br>Selamat pagi, anda harus membayar tagihan sebesar: 85000000</br></br>Tagihan untuk Mr. Yoyo</td></tr>
+    <tr><td colspan="4">Tagihan kepada: </br>Mr. Yoyo</br>Selamat pagi, anda harus membayar tagihan sebesar:</br> 85000000</br></br>Tagihan untuk Mr. Yoyo</td></tr>
 <tr><td>Nama Jasa</td><td>Harga per hari</td><td>Total hari</td><td>Subtotal</td></tr>
 <tr><td>Data Warehousing</td><td>1000000</td><td>15</td><td>15000000</td></tr>
 <tr><td>Data Cleansing</td><td>1500000</td><td>10</td><td>15000000</td></tr>
@@ -298,7 +298,10 @@ print(total_harga)
 ----
 
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br><i>jam = 17</br>
+<p align="justify"><b>Tugas Praktek</b></p>
+
+```plantuml
+jam = 17</br>
 tagihan_ke = 'Mr. Yoyo'</br>
 warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
 cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
@@ -319,32 +322,40 @@ elif jam > 12:</br>
     print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
 else:</br>
     print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br></i>
-</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
-Mr. Yoyo</br>
-Selamat siang, anda harus membayar tagihan sebesar:</br>
-85000000 </i></table></details>
+print(total_harga)
+```
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>
-  “Aksara, kantor kita akan merilis penawaran baru terkait jasa pembuatan data warehouse. Bisa tolong kembangkan kalkulatormu untuk menghitung tagihan pembayaran? Soalnya selama ini kita masih manual,” jelas Senja sembari memberikan contoh nota tagihan kantor. Aku belum mengiyakan karena sedikit ragu. Mengingat sebelumnya aku sempat salah. Tapi dalam hati aku berkata, pasti bisa! Kali ini aku harus mampu membuat kalkulator lebih rumit.</br>Solusi yang terlintas dalam bayanganku: Kalkulator ini harus dapat menghitung subtotal setiap jasa yang diambil dari kolom harga/ hari dan total hari dari setiap jasa. Ternyata Senja juga memikirkan hal yang sama dengan instruksinya yang sangat membantu.</br>tagihan_ke = 'Mr. Yoyo'</br>
-warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
-cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
-integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
-transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
-sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']</br>
-sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']</br>
-sub_integration = integration['harga_harian']*integration['total_hari']</br>
-sub_transform = transform['harga_harian']*transform['total_hari']</br>
-total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
-print("Tagihan kepada:") </br>
-print(tagihan_ke)</br>
-print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br>
-</summary><table align="justify"><i>Output : </br>
-Tagihan kepada:</br>
-Mr. Yoyo</br>
-Selamat pagi, anda harus membayar tagihan sebesar:</br>
-85000000</i></table></details>
+<table align="justify"><tr><td>Output : </td></tr>
+    <tr><td>Tagihan kepada:</td></tr>
+<tr><td>Mr. Yoyo</td></tr>
+<tr><td>Selamat siang, anda harus membayar tagihan sebesar:</td></tr>
+<tr><td>85000000 </td></tr></table>
+
+<p align="justify"> <b>Tugas Praktek</b></br>
+  “Aksara, kantor kita akan merilis penawaran baru terkait jasa pembuatan data warehouse. Bisa tolong kembangkan kalkulatormu untuk menghitung tagihan pembayaran? Soalnya selama ini kita masih manual,” jelas Senja sembari memberikan contoh nota tagihan kantor. Aku belum mengiyakan karena sedikit ragu. Mengingat sebelumnya aku sempat salah. Tapi dalam hati aku berkata, pasti bisa! Kali ini aku harus mampu membuat kalkulator lebih rumit.</br>Solusi yang terlintas dalam bayanganku: Kalkulator ini harus dapat menghitung subtotal setiap jasa yang diambil dari kolom harga/ hari dan total hari dari setiap jasa. Ternyata Senja juga memikirkan hal yang sama dengan instruksinya yang sangat membantu.
+  
+  ```plantuml
+tagihan_ke = 'Mr. Yoyo'
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } 
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } 
+integration = { 'harga_harian':2000000, 'total_hari':15 } 
+transform = { 'harga_harian':2500000, 'total_hari':10 }
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']
+sub_integration = integration['harga_harian']*integration['total_hari']
+sub_transform = transform['harga_harian']*transform['total_hari']
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform
+print("Tagihan kepada:") 
+print(tagihan_ke)
+print("Selamat pagi, anda harus membayar tagihan sebesar:") 
+print(total_harga)
+```
+
+<table align="justify"><tr><td>Output : </tr></td>
+<tr><td>Tagihan kepada:</tr></td>
+<tr><td>Mr. Yoyo</tr></td>
+<tr><td>Selamat pagi, anda harus membayar tagihan sebesar:</tr></td>
+<tr><td>85000000</tr></td></table>
 
 <p align="justify">Aku menunjukkan potongan kode dan hasil dari kalkulator yang telah aku buat ke Senja yang sudah berhasil menampilkan kalimat:</br><b>Selamat pagi, Anda harus membayar tagihan sebesar: </b></br>
 Kulihat kedua alis Senja bertaut, ini pertanda kodeku pasti ada yang keliru.</br>
@@ -354,35 +365,44 @@ Kulihat kedua alis Senja bertaut, ini pertanda kodeku pasti ada yang keliru.</br
 <li>Diatas jam 05 sore adalah salam 'selamat sore'</li>
 <li>Diatas jam 12 siang, adalah 'selamat siang'</li>
 <li>dan selain itu 'selamat pagi'</li></ol>
-<details align="justify"> <summary><b>Menampilkan suatu data dari baris dan kolom tertentu</b></br><i>
-  jam = 17</br>
-tagihan_ke = 'Mr. Yoyo'</br>
-warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
-cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
-integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
-transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
-sub_warehousing = warehousing['harga_harian']*warehousing['total_hari'] </br>
-sub_cleansing = cleansing['harga_harian']*cleansing['total_hari'] </br>
-sub_integration = integration['harga_harian']*integration['total_hari'] </br>
-sub_transform = transform['harga_harian']*transform['total_hari']</br>
-total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
-print("Tagihan kepada:")</br>
-print(tagihan_ke)</br>
-if jam>19:</br>
-    print("Selamat malam, anda harus membayar tagihan sebesar:")</br>
-elif jam>17:</br>
-    print("Selamat sore, anda harus membayar tagihan sebesar:") </br>
-elif jam > 12:</br>
-    print("Selamat siang, anda harus membayar tagihan sebesar:")</br>
-else:</br>
-    print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br></i>
-</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
-Mr. Yoyo</br>
-Selamat siang, anda harus membayar tagihan sebesar:</br>
-85000000</i></table></details>
 
-<details align="justify"> <summary><b>Python while loops – Part 1</b> </br>#Tagihan
+<p align="justify"> <b>Menampilkan suatu data dari baris dan kolom tertentu</b></p>
+ 
+  ```plantuml
+ jam = 17
+tagihan_ke = 'Mr. Yoyo'
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } 
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } 
+integration = { 'harga_harian':2000000, 'total_hari':15 } 
+transform = { 'harga_harian':2500000, 'total_hari':10 }
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari'] 
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari'] 
+sub_integration = integration['harga_harian']*integration['total_hari'] 
+sub_transform = transform['harga_harian']*transform['total_hari']
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform
+print("Tagihan kepada:")
+print(tagihan_ke)
+if jam>19:
+    print("Selamat malam, anda harus membayar tagihan sebesar:")
+elif jam>17:
+    print("Selamat sore, anda harus membayar tagihan sebesar:") 
+elif jam > 12:
+    print("Selamat siang, anda harus membayar tagihan sebesar:")
+else:
+    print("Selamat pagi, anda harus membayar tagihan sebesar:") 
+print(total_harga)
+```
+
+<table align="justify"<tr><td>Output :</tr></td>
+<tr><td>Tagihan kepada:</tr></td>
+<tr><td>Mr. Yoyo</tr></td>
+<tr><td>Selamat siang, anda harus membayar tagihan sebesar:</tr></td>
+<tr><td>85000000</tr></td></table></details>
+
+<p align="justify"> <b>Python while loops – Part 1</b> 
+    
+ ```plantuml
+  #Tagihan
 tagihan = [50000, 75000, 125000, 300000, 200000]</br>
 #Tanpa menggunakan while loop</br>
 total_tagihan = tagihan[0]+tagihan[1]+tagihan[2]+tagihan[3]+tagihan[4]</br>
@@ -394,11 +414,16 @@ total_tagihan = 0 # mula-mula, set total_tagihan ke 0</br>
 while i < jumlah_tagihan : # selama nilai i kurang dari jumlah_tagihan</br>
     total_tagihan += tagihan[i] # tambahkan tagihan[i] ke total_tagihan</br>
     i += 1 # tambahkan nilai i dengan 1 untuk memproses tagihan selanjutnya.</br>
-print(total_tagihan)</br></br>
-</summary><table align="justify"><i>Output : </br>750000</br>
-750000</i></table></details>
+print(total_tagihan)
+ ```
+ 
+<table align="justify"><tr><td>Output :</td></tr><tr><td>750000</td></tr>
+<tr><td>750000</td></tr></table></details>
 
-<details align="justify"> <summary><b>Python while loops – Part 2</b></br>tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+<p align="justify"> <b>Python while loops – Part 2</b>
+    
+ ```plantuml
+tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
 i = 0</br>
 jumlah_tagihan = len(tagihan)</br>
 total_tagihan = 0</br>
@@ -411,11 +436,17 @@ while i < jumlah_tagihan:</br>
         break</br>
     total_tagihan += tagihan[i]</br>
     i += 1</br>
-print(total_tagihan)</br></br>
-</summary><table align="justify"><i>Output : </br>terdapat angka minus dalam tagihan, perhitungan dihentikan!</br>
--1</i></table></details>
+print(total_tagihan)
+```
 
-<details align="justify"> <summary><b>Python while loops – Part 3</b></br>tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+<table align="justify"><tr><td>Output : </td></tr>
+    <tr><td>terdapat angka minus dalam tagihan, perhitungan dihentikan!</td></tr>
+<tr><td>-1</td></tr></table></details>
+
+<p align="justify"> <b>Python while loops – Part 3</b>
+
+```plantuml
+tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
 i = 0</br>
 jumlah_tagihan = len(tagihan)</br>
 total_tagihan = 0</br>
@@ -427,11 +458,16 @@ while i < jumlah_tagihan:</br>
         continue</br>
     total_tagihan += tagihan[i]</br>
     i += 1</br>
-print(total_tagihan)</br>
-</summary><table align="justify"><i>Output : </br>
-750000</i></table></details>
+print(total_tagihan)
+```
 
-<details align="justify"> <summary><b>Python for loops – Part 1</b></br>list_tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
+<table align="justify"><tr><td>Output : </tr></td>
+<tr><td>750000</tr></td></table>
+
+<details align="justify"> <summary><b>Python for loops – Part 1</b></br>
+    
+```plantuml    
+list_tagihan = [50000, 75000, -150000, 125000, 300000, -50000, 200000]</br>
 total_tagihan = 0</br>
 for tagihan in list_tagihan: # untuk setiap tagihan dalam list_tagihan</br>
     total_tagihan += tagihan# tambahkan tagihan ke total_tagihan</br>
@@ -445,69 +481,85 @@ for tagihan in list_tagihan:</br>
         print("terdapat angka minus dalam tagihan, perhitungan dihentikan!")</br>
         break</br>
     total_tagihan += tagihan</br>
-print(total_tagihan)</br></br>
-</summary><table align="justify"><i>Output : </br>terdapat angka minus dalam tagihan, perhitungan dihentikan!</br>
-125000</i></table></details>
+print(total_tagihan)
+```
 
-<details align="justify"> <summary><b>Python for loops – Part 3</b></br>Ternyata, aku belajar bahwa ada istilah nested loops, yaitu pengulangan bersarang. Dengan nested loops, aku dapat mengkombinasikan (menambahkan) struktur pengulangan lain di dalamnya.  Aku mencoba potongan kode di bawah menggunakan live code editor:</br></br>list_daerah = ['Malang', 'Palembang', 'Medan']</br>
+<table align="justify"><tr><td>Output : </td></tr><tr><td>terdapat angka minus dalam tagihan, perhitungan dihentikan!</td></tr>
+<tr><td>125000</td></tr></table>
+
+<p align="justify"> <b>Python for loops – Part 3</b></br>Ternyata, aku belajar bahwa ada istilah nested loops, yaitu pengulangan bersarang. Dengan nested loops, aku dapat mengkombinasikan (menambahkan) struktur pengulangan lain di dalamnya.  Aku mencoba potongan kode di bawah menggunakan live code editor:</p>
+
+```plantuml    
+list_daerah = ['Malang', 'Palembang', 'Medan']</br>
 list_buah = ['Apel', 'Duku', 'Jeruk']</br>
 for nama_daerah in list_daerah :</br>
     for nama_buah in list_buah:</br>
-        print(nama_buah+" "+nama_daerah)</br></br>
-</summary><table align="justify"><i>Output : </br>Apel Malang</br>
-Duku Malang</br>
-Jeruk Malang</br>
-Apel Palembang</br>
-Duku Palembang</br>
-Jeruk Palembang</br>
-Apel Medan</br>
-Duku Medan</br>
-Jeruk Medan</i></table></details>
+        print(nama_buah+" "+nama_daerah)
+```        
+        
+<table align="justify"><tr><td>Output : <tr><td>Apel Malang</td></tr>
+<tr><td>Duku Malang</td></tr>
+<tr><td>Jeruk Malang</td></tr>
+<tr><td>Apel Palembang</td></tr>
+<tr><td>Duku Palembang</td></tr>
+<tr><td>Jeruk Palembang</td></tr>
+<tr><td>Apel Medan</td></tr>
+<tr><td>Duku Medan</td></tr>
+<tr><td>Jeruk Medan</td></tr></table>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>list_cash_flow = [</br>
-2500000, 5000000, -1000000, -2500000, 5000000, 10000000,</br>
--5000000, 7500000, 10000000, -1500000, 25000000, -2500000</br>
-]</br>
-total_pengeluaran, total_pemasukan = 0, 0</br>
-for dana in list_cash_flow: </br>
-    if dana > 0:</br>
-        total_pemasukan += dana </br>
-    else:</br>
-        total_pengeluaran += dana</br>
-total_pengeluaran *= -1</br>
-print(total_pengeluaran) </br>
-print(total_pemasukan)</br></br>
-</summary><table align="justify"><i>Output : </br>12500000</br>
-65000000 </i></table></details>
+<p align="justify"> <b>Tugas Praktek</b></p>
 
+```plantuml
+list_cash_flow = [
+2500000, 5000000, -1000000, -2500000, 5000000, 10000000,
+-5000000, 7500000, 10000000, -1500000, 25000000, -2500000
+]
+total_pengeluaran, total_pemasukan = 0, 0
+for dana in list_cash_flow: 
+    if dana > 0:
+        total_pemasukan += dana 
+    else:
+        total_pengeluaran += dana
+total_pengeluaran *= -1
+print(total_pengeluaran) 
+print(total_pemasukan)
 
-<details align="justify"> <summary><b>Ekspedisi Pamanku</b></br>Aku menyambar ponsel di meja dan membuka pesan singkat dari paman tempo hari yang menjelaskan jika paman harus mengeluarkan uang sebesar 1,5 juta per mobil dalam sehari. Tapi, beliau selalu kebingungan total pengeluaran per bulan karena adanya aturan ganjil-genap yang membuat pengoperasian mobil yang berbeda. </br>“Kalau begitu, aku akan masukkan variabel jumlah_hari berisi jumlah hari dalam sebulan dan variabel list_plat_nomor berisi seluruh nomor plat mobil milik paman,” gumamku sendiri. Kalau seperti ini paman hanya perlu mengganti variabel jumlah_hari atau modifikasi variabel list_plat_nomor untuk melacak total pengeluaran paman selama sebulan. Ide Cemerlang!</br></br> #Data</br>
-uang_jalan = 1500000</br>
-jumlah_hari = 31</br>
-list_plat_nomor = [8993, 2198, 2501, 2735, 3772, 4837, 9152]</br>
-#Pengecekan kendaraan dengan nomor pelat ganjil atau genap </br>
-#Deklarasikan kendaraan_genap dan kendaraan_ganjil = 0</br>
-kendaraan_genap = 0 </br>
-kendaraan_ganjil = 0</br>
-for plat_nomor in list_plat_nomor:</br>
-    if plat_nomor % 2 == 0:</br>
-        kendaraan_genap += 1</br>
-    else:</br>
-        kendaraan_ganjil += 1</br>
-#Total pengeluaran untuk kendaraan dengan nomor pelat ganjil </br>
-#dan genap dalam 1 bulan</br>
-i = 1</br>
-total_pengeluaran = 0</br>
-while i <= jumlah_hari:</br>
-    if i % 2 == 0:</br>
-        total_pengeluaran += (kendaraan_genap * uang_jalan)</br>
-    else:</br>
-        total_pengeluaran += (kendaraan_ganjil * uang_jalan)</br>
-    i += 1</br>
-#Cetak total pengeluaran</br>
-print(total_pengeluaran)</br></br>
-</summary><table align="justify"><i>Output : </br>163500000 </i></table></details>
+```
 
+<table align="justify"><tr><td>Output : </td></tr><tr><td>12500000</td></tr>
+<tr><td>65000000 </td></tr></table>
+
+<p align="justify"> <b>Ekspedisi Pamanku</b></br>Aku menyambar ponsel di meja dan membuka pesan singkat dari paman tempo hari yang menjelaskan jika paman harus mengeluarkan uang sebesar 1,5 juta per mobil dalam sehari. Tapi, beliau selalu kebingungan total pengeluaran per bulan karena adanya aturan ganjil-genap yang membuat pengoperasian mobil yang berbeda. </br>“Kalau begitu, aku akan masukkan variabel jumlah_hari berisi jumlah hari dalam sebulan dan variabel list_plat_nomor berisi seluruh nomor plat mobil milik paman,” gumamku sendiri. Kalau seperti ini paman hanya perlu mengganti variabel jumlah_hari atau modifikasi variabel list_plat_nomor untuk melacak total pengeluaran paman selama sebulan. Ide Cemerlang!</p>
+
+```plantuml
+#Data
+uang_jalan = 1500000
+jumlah_hari = 31
+list_plat_nomor = [8993, 2198, 2501, 2735, 3772, 4837, 9152]
+#Pengecekan kendaraan dengan nomor pelat ganjil atau genap
+#Deklarasikan kendaraan_genap dan kendaraan_ganjil = 0
+kendaraan_genap = 0 
+kendaraan_ganjil = 0
+for plat_nomor in list_plat_nomor:
+    if plat_nomor % 2 == 0:
+        kendaraan_genap += 1
+    else:
+        kendaraan_ganjil += 1
+#Total pengeluaran untuk kendaraan dengan nomor pelat ganjil 
+#dan genap dalam 1 bulan
+i = 1
+total_pengeluaran = 0
+while i <= jumlah_hari:
+    if i % 2 == 0:
+        total_pengeluaran += (kendaraan_genap * uang_jalan)
+    else:
+        total_pengeluaran += (kendaraan_ganjil * uang_jalan)
+    i += 1
+#Cetak total pengeluaran
+print(total_pengeluaran)
+```
+
+<table align="justify"><tr><td>Output : </td></tr><tr><td>163500000 </td></tr></table>
 
 
 <p align="justify"> <b>Hasil Belajarku</b></br>
@@ -520,5 +572,5 @@ Konstruksi dari struktur bahasa pemrograman Python.</li>
 <li>Teknik mempraktekkan penggunaan pengkondisian untuk pengambilan keputusan dan perulangan pada Python.</li>
 <li>Program Python untuk penyelesaian kasus bisnis sederhana.</li></ol>
 
-<p align="center"><b>E-Sertifikat </b></br><img src="https://github.com/yenysyafitry/DQLab-Python-for-Data-Professional-Beginner/blob/main/e-sertifikat.jpg"></p>
+<p align="center"><b>E-Sertifikat </b></br><img src="https://github.com/yenysyafitry/DQLab-Python-for-Data-Professional-Beginner---Part-1/blob/main/e-sertifikat.jpg"></p>
 
