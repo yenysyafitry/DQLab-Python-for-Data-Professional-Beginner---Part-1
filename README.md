@@ -14,10 +14,10 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 ----
 
-<p align="justify">Program pertama: "Hello World"
+<p align="justify"><b>Program pertama: "Hello World"</b>
     
-  ```plantuml
-    print("Hello World!")
+```plantuml
+print("Hello World!")
 ```
 
 |Output : |
