@@ -34,57 +34,97 @@ print("Halo Dunia")
 print("Riset Bahasa Python")
 ```
 
-<details> <summary>.
-</summary><table align="justify"><i>Output : </br>Halo Dunia</br>
-Riset Bahasa Python</i></table></details>
+|Output : |
+| :--     | 
+| Halo Dunia</br>Riset Bahasa Python | 
 
 ----
-<details align="justify"> <summary><b>Struktur Program Python - Part 1</b></br>#Statement</br>
-print("Belajar Python menyenangkan") </br>
-print("Halo Dunia")</br>
-print("Hello World!")</br>
-#Variables & Literals</br>
-bilangan1 = 5</br>
-bilangan2 = 10</br>
-kalimat1 = "Belajar Bahasa Python"</br>
-#Operators</br>
-print(bilangan1 + bilangan2)</br></br>
-</summary><table align="justify"><i></br>Output : </br>Belajar Python menyenangkan</br>
-Halo Dunia</br>
-Hello World!</br>
-15</i></table></details>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br> <i>bilangan1 = 20</br>
-bilangan2 = 10</br>
-print(bilangan1 - bilangan2)</i></br></br>
-</summary><table align="justify"><i>Output : </br>10</i></table></details>
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>
-Aku diminta menghitung harga_setelah_potongan dan harga_final dengan mengalikan harga_setelah_potongan dengan angka 1.1 karena jumlah PPN sebesar 10% (100% + 10% = 110% atau 1.1)</br>
-Aku menggunakan variabel harga_asli dengan nilai 20000 dan variabel potongan dengan nilai 2000.</br></br>harga_asli = 20000</br>
-potongan = 2000</br>
-harga_setelah_potongan = harga_asli - potongan</br>
-harga_final = harga_setelah_potongan * 1.1</br>
-print(harga_final)</br></br>
-</summary><table align="justify"><i>Output : </br>19800.0</i></table></details>
+<p align="justify">Struktur Program Python - Part 1</p>
 
-<details align="justify"> <summary><b>Sequence Type – Part 1</b></br>Tipe data ini digunakan untuk menampung sekumpulan data secara terorganisir.</br>
-List dan tuple merupakan bentuk dari tipe data sequence.</br>
-Pada part 1 ini, aku akan mempelajari tipe data list terlebih dahulu.</br>
-Tipe data list diawali dengan tanda kurung siku buka ( [ ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan kurung siku tutup ( ] ). Sebagai contoh:</br></br>contoh_list = [1, 'dua', 3, 4.0,5]</br>
-print(contoh_list[0])</br>
-print(contoh_list[3])</br>
-contoh_list = [1, 'dua', 3, 4.0,5]</br>
-contoh_list[3] = 'empat'</br>
-print(contoh_list[3])</br></br>
-</summary><table align="justify"><i>Output : </br>1</br>
-4.0</br>
-empat</i></table></details>
+```plantuml
+#Statement
+print("Belajar Python menyenangkan") 
+print("Halo Dunia")
+print("Hello World!")
+#Variables & Literals
+bilangan1 = 5
+bilangan2 = 10
+kalimat1 = "Belajar Bahasa Python"
+#Operators
+print(bilangan1 + bilangan2)
+```
 
-<p align="justify"> <b>Sequence Type – Part 2</b></br>Setelah mempelajari tipe data list. Aku mempelajari tipe data tuple. Tipe data tuple juga berfungsi untuk menampung sekumpulan data. Tipe data tuple diawali dengan tanda kurung buka ( ( ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( ) )</br> </br> contoh_tuple = ('januari', 'februari', 'maret', 'april')</br> 
-print(contoh_tuple[0])</br> 
-contoh_tuple = ('januari', 'februari', 'maret', 'april')</br> 
-contoh_tuple[0] = 'Desember'</p>
+|Output : |
+| :--     | 
+| Belajar Python menyenangkan</br>Halo Dunia</br>Hello World! | 
+
+----
+
+
+<p align="justify"><b>Tugas Praktek</b></p>
+
+```plantuml
+bilangan1 = 20
+bilangan2 = 10
+print(bilangan1 - bilangan2)
+```
+
+|Output : |
+| :--     | 
+| 10 | 
+
+----
+
+<p align="justify"><b>Tugas Praktek</b></br>Aku diminta menghitung harga_setelah_potongan dan harga_final dengan mengalikan harga_setelah_potongan dengan angka 1.1 karena jumlah PPN sebesar 10% (100% + 10% = 110% atau 1.1)</br>Aku menggunakan variabel harga_asli dengan nilai 20000 dan variabel potongan dengan nilai 2000.</p>
+
+```plantuml
+harga_asli = 20000
+potongan = 2000
+harga_setelah_potongan = harga_asli - potongan
+harga_final = harga_setelah_potongan * 1.1
+print(harga_final)
+```
+
+|Output : |
+| :--     | 
+| 19800.0 | 
+
+----
+
+<p align="justify"><b>Sequence Type – Part 1</b></br>Tipe data ini digunakan untuk menampung sekumpulan data secara terorganisir. List dan tuple merupakan bentuk dari tipe data sequence. Pada part 1 ini, aku akan mempelajari tipe data list terlebih dahulu. Tipe data list diawali dengan tanda kurung siku buka ( [ ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan kurung siku tutup ( ] ). Sebagai contoh:</p>
+
+```plantuml
+contoh_list = [1, 'dua', 3, 4.0, 5]
+print(contoh_list[0])
+print(contoh_list[3])
+contoh_list = [1, 'dua', 3, 4.0, 5]
+contoh_list[3] = 'empat'
+print(contoh_list[3])
+```
+
+|Output : |
+| :--     | 
+| 1</br>4.0</br>empat | 
+
+----
+
+<p align="justify"><b>Sequence Type – Part 2</b></br>Setelah mempelajari tipe data list. Aku mempelajari tipe data tuple. Tipe data tuple juga berfungsi untuk menampung sekumpulan data. Tipe data tuple diawali dengan tanda kurung buka ( ( ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( ) )</p>
+
+```plantuml
+contoh_tuple = ('Januari','Februari','Maret','April')
+print(contoh_tuple[0])
+contoh_tuple = ('Januari','Februari','Maret','April')
+contoh_tuple[0] = 'Desember'
+```
+
+|Output : |
+| :--     | 
+| Januari </br>---------------------------------------------------------------------------</br>TypeError</br>Traceback (most recent call last)</br><ipython-input-7-2d788cc608d9> in <module></br>2 print(contoh_tuple[0])</br>3 contoh_tuple = ('Januari','Februari','Maret','April')</br>----> 4 contoh_tuple[0] = 'Desember'</br>TypeError: 'tuple' object does not support item assignment | 
+
+----
+
 
 
 <details align="justify"> <summary><b>Set Type</b></br>Serupa dengan tipe data sequence, tipe data set digunakan untuk menampung sekumpulan data dengan tipe lainnya. Terdapat dua jenis dari tipe data set yaitu, set dan frozenset.</br>
