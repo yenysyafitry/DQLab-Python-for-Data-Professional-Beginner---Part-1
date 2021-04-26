@@ -285,10 +285,10 @@ print("Selamat pagi, anda harus membayar tagihan sebesar:")
 print(total_harga)
 ```
 
-<table align="justify"><tr>Tagihan kepada:</br>
-Mr. Yoyo</br>
-Selamat pagi, anda harus membayar tagihan sebesar:</br>
-85000000</i></br></br>
+<table align="justify">
+<tr><td colspan="4">Tagihan kepada: Mr. Yoyo</td></tr>
+<tr><td colspan="4">Selamat pagi, anda harus membayar tagihan sebesar: 85000000</td></tr>
+<tr><td></td></tr>    
 <tr><td colspan="4">Tagihan untuk Mr. Yoyo</td></tr>
 <tr><td>Nama Jasa</td><td>Harga per hari</td><td>Total hari</td><td>Subtotal</td></tr>
 <tr><td>Data Warehousing</td><td>1000000</td><td>15</td><td>15000000</td></tr>
