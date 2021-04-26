@@ -20,9 +20,10 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
     print("Hello World!")
 ```
 
-<details align="justify"> <summary>
-</summary><table align="justify"><i>Output : </br>Hello World!</i></table></details>
-</p>
+|Output : |
+| :--     | 
+| Hello World!  | 
+
 ----
 
 <p align="justify">
