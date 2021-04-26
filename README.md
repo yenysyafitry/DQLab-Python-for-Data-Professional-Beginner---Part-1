@@ -12,13 +12,13 @@ Sifat open-source dari Python mengartikan bahwa setiap orang dapat mengembangkan
 Fungsi Python yang akan pertama kali aku pelajari adalah fungsi print().
 Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
-<details align="justify"> <summary>print("Hello World!")
+<details align="justify"> <summary>print("Hello World!")</br></br>
 </summary><table align="justify"><i>Output : </br>Hello World!</i></table></details>
 
 
 
 <details align="justify"> <summary>Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ().</br></br>print("Halo Dunia")</br>
-print("Riset Bahasa Python")</br>
+print("Riset Bahasa Python")</br></br>
 </summary><table align="justify"><i>Output : </br>Halo Dunia</br>
 Riset Bahasa Python</i></table></details>
 
@@ -31,7 +31,7 @@ bilangan1 = 5</br>
 bilangan2 = 10</br>
 kalimat1 = "Belajar Bahasa Python"</br>
 #Operators</br>
-print(bilangan1 + bilangan2)</br>
+print(bilangan1 + bilangan2)</br></br>
 </summary><table align="justify"><i></br>Output : </br>Belajar Python menyenangkan</br>
 Halo Dunia</br>
 Hello World!</br>
@@ -90,7 +90,7 @@ Programmer </i></table></details>
 
 <details align="justify"> <summary><b>Tugas Praktek</b></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }
 baju = {"nama": "Baju Unikloh", "Harga": 80000, "diskon": 8000 }
-Celana = {"nama": "Celana Lepis", "Harga": 200000, "diskon": 60000 }</i></br>
+Celana = {"nama": "Celana Lepis", "Harga": 200000, "diskon": 60000 }</i></br></br>
 </summary><table align="justify"><i>Output : </br></i>
 <tr><td>Nama Barang</td><td>Harga</td><td>Diskon</td></tr>
 <tr><td>Sepatu Niko</td><td>150000</td><td>30000</td></tr>
@@ -117,7 +117,7 @@ total_harga = harga_sepatu + harga_baju + harga_celana</br>
 #Hitung harga kena pajak</br>
 total_pajak = total_harga * 0.1</br>
 #Cetak total_harga + total_pajak</br>
-print(total_harga + total_pajak)</br>
+print(total_harga + total_pajak)</br></br>
 </summary><table align="justify"><i>Output : </br>365200.0</i></table></details>
 
 <details align="justify"> <summary><b>Nilai Prioritas Operator dalam Python – Part 1</b></br>Sebagai contoh, untuk menuliskan sebuah program menghitung diskon dan pajak pembelian, berdasarkan ilmu yang telah aku pelajari, aku dapat menuliskannya dengan potongan kode berikut</br></br>#Kode awal</br>
@@ -135,7 +135,7 @@ potongan_harga = 0.3</br>
 pajak = 0.1 # pajak dalam persen ~ 10%</br>
 harga_bayar = (1-0.3) * total_harga #baris pertama </br>
 harga_bayar += harga_bayar * pajak # baris kedua</br>
-print("Penyederhanaan kode - harga_bayar=", harga_bayar)</br>
+print("Penyederhanaan kode - harga_bayar=", harga_bayar)</br></br>
 </summary><table align="justify"><i>Output : </br></br>Kode awal - harga_bayar= 115500.0</br>
 Penyederhanaan kode - harga_bayar= 115500.0</i></table></details>
 
@@ -146,7 +146,7 @@ harga_sepatu = sepatu["harga"] - sepatu["diskon"]</br>
 harga_baju = baju["harga"] - baju["diskon"]</br>
 harga_celana = celana["harga"] - celana["diskon"]</br>
 total_harga = (harga_sepatu + harga_baju + harga_celana) * 1.1</br>
-print(total_harga)</br>
+print(total_harga)</br></br>
 </summary><table align="justify"><i>Output : </br>365200.00000000006</i></table></details>
 
 
