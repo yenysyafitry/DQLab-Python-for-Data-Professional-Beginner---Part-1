@@ -125,115 +125,181 @@ contoh_tuple[0] = 'Desember'
 
 ----
 
+<p align="justify"><b>Set Type</b></br>Serupa dengan tipe data sequence, tipe data set digunakan untuk menampung sekumpulan data dengan tipe lainnya. Terdapat dua jenis dari tipe data set yaitu, set dan frozenset. Tipe data set diawali dengan tanda kurung buka kurawal ( { ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( } ). Namun, berbeda dengan tipe data sequence, seperti list, tipe data objek tidak mengizinkan adanya elemen dengan nilai yang sama dan tidak memperdulikan urutan dari elemen. Sebagai contoh:</p>
 
+```plantuml
+contoh_list = ['Dewi','Budi','Cici','Linda','Cici'] 
+print(contoh_list)
+contoh_set = {'Dewi','Budi','Cici','Linda','Cici'}
+print(contoh_set)
+contoh_frozen_set = ({'Dewi','Budi','Cici','Linda','Cici'})
+print(contoh_frozen_set)
+```
 
-<details align="justify"> <summary><b>Set Type</b></br>Serupa dengan tipe data sequence, tipe data set digunakan untuk menampung sekumpulan data dengan tipe lainnya. Terdapat dua jenis dari tipe data set yaitu, set dan frozenset.</br>
-Tipe data set diawali dengan tanda kurung buka kurawal ( { ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( } ). Namun, berbeda dengan tipe data sequence, seperti list, tipe data objek tidak mengizinkan adanya elemen dengan nilai yang sama dan tidak memperdulikan urutan dari elemen.
-Sebagai contoh:</br></br><i> contoh_list = ['Dewi', 'Budi', 'Cici', 'Linda', 'Cici']</br>
-print(contoh_list)</br>
-contoh_set = {'Dewi', 'Budi', 'Cici', 'Linda', 'Cici'}</br>
-print(contoh_set)</br>
-contoh_frozen_set = ({'Dewi', 'Budi', 'Cici', 'Linda', 'Cici'})</br>
-print(contoh_frozen_set)</i> </br></br>
-</summary><table align="justify"><i>Output : </br> ['Dewi', 'Budi', 'Cici', 'Linda', 'Cici'] </br>
-{'Dewi', 'Cici', 'Linda', 'Budi'} </br>
-{'Dewi', 'Cici', 'Linda', 'Budi'}</i></table></details>
+|Output : |
+| :--     | 
+| ['Dewi', 'Budi', 'Cici', 'Linda', 'Cici'] </br>{'Dewi', 'Cici', 'Linda', 'Budi'} </br>{'Dewi', 'Cici', 'Linda', 'Budi'} | 
 
-<details align="justify"> <summary><b>Mapping Type</b></br>Tipe data mapping dapat digunakan untuk memetakan sebuah nilai ke nilai lainnya. Dalam Python, tipe data mapping disebut dengan istilah dictionary. Tipe data dictionary dapat dideklarasikan dengan diawali oleh tanda kurung buka kurawal ( { ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( } ). Setiap elemen pada tipe data dictionary dideklarasikan dengan format:</br></br>person = {'nama': 'John Doe', 'pekerjaan': 'Programmer'}</br>
-print(person['nama'])</br>
-print(person['pekerjaan'])</br></br>
-</summary><table align="justify"><i>Output : </br>John Doe</br>
-Programmer </i></table></details>
+----
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br><i>sepatu = {"nama": "Sepatu Niko", "Harga": 150000, "diskon": 30000 }</br>
-baju = {"nama": "Baju Unikloh", "Harga": 80000, "diskon": 8000 }</br>
-Celana = {"nama": "Celana Lepis", "Harga": 200000, "diskon": 60000 }</i></br></br>
-</summary><table align="justify"><i>Output : </br></i>
+<p align="justify"><b>Mapping Type</b></br>Tipe data mapping dapat digunakan untuk memetakan sebuah nilai ke nilai lainnya. Dalam Python, tipe data mapping disebut dengan istilah dictionary. Tipe data dictionary dapat dideklarasikan dengan diawali oleh tanda kurung buka kurawal ( { ), memisahkan setiap elemen di dalamnya dengan tanda koma ( , ) dan ditutup dengan tanda kurung tutup ( } ). Setiap elemen pada tipe data dictionary dideklarasikan dengan format:</p>
+
+```plantuml
+person = {'nama': 'John Doe', 'pekerjaan': 'Programmer'}
+print(person['nama'])
+print(person['pekerjaan'])
+```
+
+|Output : |
+| :--     | 
+| John Doe</br>Programmer | 
+
+----
+
+<p align="justify"><b>Tugas Praktek</b></p>
+
+```plantuml
+sepatu = {"nama barang": "Sepatu Niko", "harga": 150000, "diskon": 30000 }
+baju = {"nama barang": "Baju Unikloh", "harga": 80000, "diskon": 8000 }
+celana = {"nama barang": "Celana Lepis", "harga": 200000, "diskon": 60000 }
+```
+
+<table align="justify"><i>Output : </br></i>
 <tr><td>Nama Barang</td><td>Harga</td><td>Diskon</td></tr>
 <tr><td>Sepatu Niko</td><td>150000</td><td>30000</td></tr>
 <tr><td>Baju Unikloh</td><td>80000</td><td>8000</td></tr>
 <tr><td>Celana Lepis</td><td>200000</td><td>60000</td></tr>
-</table></details>
 
-<p align="justify"> <b>Tugas Praktek</b></br>Setelah berhasil merepresentasikan setiap barang ke dalam tipe data dictionary dengan variabel nama, harga, dan diskon, langkahku selanjutnya adalah: mendeklarasikan list dengan nama daftar_belanja yang berisi data sepatu, baju, dan celana</br></br>sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>
-baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>
-celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000} </br>
-daftar_belanja = [sepatu,baju,celana]
-<p>
+----
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</br># Data yang dinyatakan ke dalam dictionary</br>
-sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>
-baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>
-celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000}</br>
-#Hitunglah harga masing-masing data setelah dikurangi diskon</br>
-harga_sepatu = sepatu["harga"] - sepatu["diskon"] </br>
-harga_baju = baju["harga"] - baju["diskon"]</br>
-harga_celana = celana["harga"] - celana["diskon"]</br>
-#Hitung harga total</br>
-total_harga = harga_sepatu + harga_baju + harga_celana</br>
-#Hitung harga kena pajak</br>
-total_pajak = total_harga * 0.1</br>
-#Cetak total_harga + total_pajak</br>
-print(total_harga + total_pajak)</br></br>
-</summary><table align="justify"><i>Output : </br>365200.0</i></table></details>
+<p align="justify"><b>Tugas Praktek</b></br>Setelah berhasil merepresentasikan setiap barang ke dalam tipe data dictionary dengan variabel nama, harga, dan diskon, langkahku selanjutnya adalah: mendeklarasikan list dengan nama daftar_belanja yang berisi data sepatu, baju, dan celana</p>
 
-<details align="justify"> <summary><b>Nilai Prioritas Operator dalam Python – Part 1</b></br>Sebagai contoh, untuk menuliskan sebuah program menghitung diskon dan pajak pembelian, berdasarkan ilmu yang telah aku pelajari, aku dapat menuliskannya dengan potongan kode berikut</br></br>#Kode awal</br>
-total_harga = 150000</br>
-potongan_harga = 0.3</br>
-pajak = 0.1 # pajak dalam persen ~ 10%</br>
-harga_bayar = 1 - 0.3 # baris pertama</br>
-harga_bayar *= total_harga # baris kedua</br>
-pajak_bayar = pajak * harga_bayar # baris ketiga</br>
-harga_bayar += pajak_bayar # baris ke-4</br>
-print("Kode awal - harga_bayar=", harga_bayar)</br>
-#Penyederhanaan baris kode dengan menerapkan prioritas operator</br>
-total_harga = 150000</br>
-potongan_harga = 0.3</br>
-pajak = 0.1 # pajak dalam persen ~ 10%</br>
-harga_bayar = (1-0.3) * total_harga #baris pertama </br>
-harga_bayar += harga_bayar * pajak # baris kedua</br>
-print("Penyederhanaan kode - harga_bayar=", harga_bayar)</br></br>
-</summary><table align="justify"><i>Output : </br></br>Kode awal - harga_bayar= 115500.0</br>
-Penyederhanaan kode - harga_bayar= 115500.0</i></table></details>
+```plantuml
+sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} 
+baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} 
+celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000} 
+daftar_belanja = [sepatu, baju, celana]
+```
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>Aku baru sadar kalau ternyata dengan struktur penulisan yang tepat, penulisan syntax dapat dipersingkat untuk menjadi lebih simpel. Kenapa tidak terpikirkan olehku ya? Harusnya aku tidak perlu mendeklarasikan variabel total_pajak dan aku bisa langsung menampung hasil perhitungan akhir saat mendeklarasikan variabel total_harga. Jadi, kodeku akan berjalan jika aku menambahkan setiap harga barang yang telah dipotong diskon sebelum menghitung pajak.</br></br>sepatu = { "nama" : "Sepatu Niko", "harga": 150000, "diskon": 30000 }</br>
-baju = { "nama" : "Baju Unikloh", "harga": 80000, "diskon": 8000 }</br>
-celana = { "nama" : "Celana Lepis", "harga": 200000, "diskon": 60000 }</br>
-harga_sepatu = sepatu["harga"] - sepatu["diskon"]</br>
-harga_baju = baju["harga"] - baju["diskon"]</br>
-harga_celana = celana["harga"] - celana["diskon"]</br>
-total_harga = (harga_sepatu + harga_baju + harga_celana) * 1.1</br>
-print(total_harga)</br></br>
-</summary><table align="justify"><i>Output : </br>365200.00000000006</i></table></details>
+|Output : |
+| :--     | 
+|sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} </br>baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} </br>celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000} </br>daftar_belanja = [sepatu,baju,celana]|
 
+----
 
-<details align="justify"> <summary><b>Tugas Praktek</b></br>tagihan_ke = 'Mr. Yoyo'</br>
-warehousing = { 'harga_harian': 1000000, 'total_hari':15 } </br>
-cleansing = { 'harga_harian': 1500000, 'total_hari':10 } </br>
-integration = { 'harga_harian':2000000, 'total_hari':15 } </br>
-transform = { 'harga_harian':2500000, 'total_hari':10 }</br>
-sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']</br>
-sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']</br>
-sub_integration = integration['harga_harian']*integration['total_hari']</br>
-sub_transform = transform['harga_harian']*transform['total_hari']</br>
-total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform</br>
-print("Tagihan kepada:") </br>
-print(tagihan_ke)</br>
-print("Selamat pagi, anda harus membayar tagihan sebesar:") </br>
-print(total_harga)</br></br>
-</summary><table align="justify"><i>Output : </br>Tagihan kepada:</br>
+<p align="justify"><b>Tugas Praktek</b></br>Dengan data yang aku miliki, aku bisa menghitung total harga jual dengan potongan harga dengan pajak sebesar 10% dari nilai jual.</p>
+
+```plantuml
+#Data yang dinyatakan ke dalam dictionary
+sepatu = {"nama": "Sepatu Niko", "harga": 150000, "diskon": 30000} 
+baju = {"nama": "Baju Unikloh", "harga": 80000, "diskon": 8000} 
+celana = {"nama": "Celana Lepis", "harga": 200000, "diskon": 60000}
+#Hitunglah harga masing-masing data setelah dikurangi diskon
+harga_sepatu = sepatu["harga"] - sepatu["diskon"] 
+harga_baju = baju["harga"] - baju["diskon"]
+harga_celana = celana["harga"] - celana["diskon"]
+#Hitung harga total
+total_harga = harga_sepatu + harga_baju + harga_celana
+#Hitung harga kena pajak
+total_pajak = total_harga * 0.1
+#Cetak total_harga + total_pajak
+print(total_harga + total_pajak)
+```
+
+|Output : |
+| :--     | 
+|365200.0|
+
+----
+
+<p align="justify"><b>Nilai Prioritas Operator dalam Python – Part 1</b></br>Sebagai contoh, untuk menuliskan sebuah program menghitung diskon dan pajak pembelian, berdasarkan ilmu yang telah aku pelajari, aku dapat menuliskannya dengan potongan kode berikut</p>
+
+```plantuml
+#Kode awal
+total_harga = 150000
+potongan_harga = 0.3
+pajak = 0.1 # pajak dalam persen ~ 10%
+harga_bayar = 1 - 0.3 # baris pertama
+harga_bayar *= total_harga # baris kedua
+pajak_bayar = pajak * harga_bayar # baris ketiga
+harga_bayar += pajak_bayar # baris ke-4
+print("Kode awal - harga_bayar=", harga_bayar)
+#Penyederhanaan baris kode dengan menerapkan prioritas operator
+total_harga = 150000
+potongan_harga = 0.3
+pajak = 0.1 # pajak dalam persen ~ 10%
+harga_bayar = (1 - 0.3) * total_harga #baris pertama 
+harga_bayar += harga_bayar * pajak # baris kedua
+print("Penyederhanaan kode - harga_bayar=", harga_bayar)
+```
+
+|Output : |
+| :--     | 
+|Kode awal - harga_bayar= 115500.0 </br>Penyederhanaan kode - harga_bayar= 115500.0|
+
+----
+
+<p align="justify"><b>Tugas Praktek</b></br>Aku baru sadar kalau ternyata dengan struktur penulisan yang tepat, penulisan syntax dapat dipersingkat untuk menjadi lebih simpel. Kenapa tidak terpikirkan olehku ya? Harusnya aku tidak perlu mendeklarasikan variabel total_pajak dan aku bisa langsung menampung hasil perhitungan akhir saat mendeklarasikan variabel total_harga. Jadi, kodeku akan berjalan jika aku menambahkan setiap harga barang yang telah dipotong diskon sebelum menghitung pajak.</p>
+
+```plantuml
+#Kode awal
+total_harga = 150000
+potongan_harga = 0.3
+pajak = 0.1 # pajak dalam persen ~ 10%
+harga_bayar = 1 - 0.3 # baris pertama
+harga_bayar *= total_harga # baris kedua
+pajak_bayar = pajak * harga_bayar # baris ketiga
+harga_bayar += pajak_bayar # baris ke-4
+print("Kode awal - harga_bayar=", harga_bayar)
+#Penyederhanaan baris kode dengan menerapkan prioritas operator
+total_harga = 150000
+potongan_harga = 0.3
+pajak = 0.1 # pajak dalam persen ~ 10%
+harga_bayar = (1 - 0.3) * total_harga #baris pertama 
+harga_bayar += harga_bayar * pajak # baris kedua
+print("Penyederhanaan kode - harga_bayar=", harga_bayar)
+```
+
+|Output : |
+| :--     | 
+|365200.00000000006|
+
+----
+
+<p align="justify"><b>Tugas Praktek</b></br>Aku baru sadar kalau ternyata dengan struktur penulisan yang tepat, penulisan syntax dapat dipersingkat untuk menjadi lebih simpel. Kenapa tidak terpikirkan olehku ya? Harusnya aku tidak perlu mendeklarasikan variabel total_pajak dan aku bisa langsung menampung hasil perhitungan akhir saat mendeklarasikan variabel total_harga. Jadi, kodeku akan berjalan jika aku menambahkan setiap harga barang yang telah dipotong diskon sebelum menghitung pajak.</p>
+
+```plantuml
+tagihan_ke = 'Mr. Yoyo'
+warehousing = { 'harga_harian': 1000000, 'total_hari':15 } 
+cleansing = { 'harga_harian': 1500000, 'total_hari':10 } 
+integration = { 'harga_harian':2000000, 'total_hari':15 } 
+transform = { 'harga_harian':2500000, 'total_hari':10 }
+sub_warehousing = warehousing['harga_harian']*warehousing['total_hari']
+sub_cleansing = cleansing['harga_harian']*cleansing['total_hari']
+sub_integration = integration['harga_harian']*integration['total_hari']
+sub_transform = transform['harga_harian']*transform['total_hari']
+total_harga = sub_warehousing+sub_cleansing+sub_integration+sub_transform
+print("Tagihan kepada:") 
+print(tagihan_ke)
+print("Selamat pagi, anda harus membayar tagihan sebesar:") 
+print(total_harga)
+```
+
+<table align="justify"><tr>Tagihan kepada:</br>
 Mr. Yoyo</br>
 Selamat pagi, anda harus membayar tagihan sebesar:</br>
 85000000</i></br></br>
 <tr><td colspan="4">Tagihan untuk Mr. Yoyo</td></tr>
-
 <tr><td>Nama Jasa</td><td>Harga per hari</td><td>Total hari</td><td>Subtotal</td></tr>
 <tr><td>Data Warehousing</td><td>1000000</td><td>15</td><td>15000000</td></tr>
 <tr><td>Data Cleansing</td><td>1500000</td><td>10</td><td>15000000</td></tr>
 <tr><td>Data Integration</td><td>2000000</td><td>15</td><td>30000000</td></tr>
 <tr><td>Data Transformation</td><td>2500000</td><td>10</td><td>25000000</td></tr>
 <tr><td colspan="3">Total</td><td>85000000</td></tr>
-</table></details>
+</table>
+
+----
+
 
 <details align="justify"> <summary><b>Tugas Praktek</b></br><i>jam = 17</br>
 tagihan_ke = 'Mr. Yoyo'</br>
