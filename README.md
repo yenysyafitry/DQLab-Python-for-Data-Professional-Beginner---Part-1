@@ -16,7 +16,8 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 <p align="justify"><b>Program pertama: "Hello World"</b>
     
-```plantuml print("Hello World!")
+```plantuml
+print("Hello World!")
 ```
 
 |Output : |
@@ -27,10 +28,17 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 <p align="justify">
 Keren! Aku baru tahu kalau Python memiliki fungsi print() yang berguna untuk menampilkan pesan ke layar pengguna. Ayo kita menampilkan kalimat “Halo Dunia” dan “Riset Bahasa Python” menggunakan fungsi Print ()</p>
-<details align="justify"> <summary>.
+
+```plantuml
+print("Halo Dunia")
+print("Riset Bahasa Python")
+```
+
+<details> <summary>.
 </summary><table align="justify"><i>Output : </br>Halo Dunia</br>
 Riset Bahasa Python</i></table></details>
 
+----
 <details align="justify"> <summary><b>Struktur Program Python - Part 1</b></br>#Statement</br>
 print("Belajar Python menyenangkan") </br>
 print("Halo Dunia")</br>
