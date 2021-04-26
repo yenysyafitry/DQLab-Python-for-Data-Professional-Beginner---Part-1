@@ -15,9 +15,9 @@ Dengan fungsi print(), aku dapat menampilkan pesan ke layar pengguna.</p>
 
 <p align="justify">Program pertama: "Hello World"</p>
     
-    ```plantuml
+  ```plantuml
     print("Hello World!")
-     ```
+```
 
 <details align="justify"> <summary>
 </summary><table align="justify"><i>Output : </br>Hello World!</i></table></details>
